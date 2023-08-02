@@ -1,0 +1,22 @@
+// ex => text-center text-md-center
+
+@each $breakName,
+$breakValue in $breakpoints {
+    @if $breakName !="" {
+        @include responsive-min($breakValue) {
+            @each $prefix in $text-algins {
+                .text-#{$breakName}-#{$prefix} {
+                    text-align: #{$prefix} !important;
+                }
+            }
+        }
+    }
+
+    @else {
+        @each $prefix in $text-algins {
+            .text-#{$prefix} {
+                text-align: #{$prefix} !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+$device-xxs: 282px !default;
+$device-xs: 425px !default;
+$device-sm: 576px !default;
+$device-md: 768px !default;
+$device-lg: 992px !default;
+$device-xl: 1200px !default;
+$device-xxl: 1400px !default;
+
+$colors: (
+    'black' : #000,
+    'white' : #fff,
+    'transparent' :#ffffff00
+);
+
+$text-algins: (
+    left,
+    right,
+    center,
+    end,
+    start,
+);
+
+// Spaces Variables [spacings / rem / sides / breakpoints]
+$breakpoints: (
+    "": "",
+    "xs": 425px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+);
+
+$sides: (
+    "t": "top",
+    "b": "bottom",
+    "l": "left",
+    "r": "right",
+    "e": "inline-end",
+    "s": "inline-start",
+    "": ("top",
+        "left",
+        "bottom",
+        "right"
+    ),
+    "x": ("left",
+        "right"
+    ),
+    "y": ("top",
+        "bottom"
+    ),
+);
+
+$spacings: (
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    auto
+);
+$rem : 0.25;
+
+// Display
+$display: (
+    "block",
+    "inline",
+    "inline-block",
+    "inline-flex",
+    "flex",
+    "grid",
+    "none"
+);
+
+
+$flexList : ("flex-direction" : ("row" : "row",
+        "column" : "column",
+        "row-reverse" : "row-reverse",
+        "column-reverse" : "column-reverse",
+    ),
+    'flex-wrap' : ("wrap" : "wrap",
+        "nowrap" : "nowrap",
+        "wrap-reverse" : "wrap-reverse",
+    ),
+    "justify-content": ("start" : "flex-start",
+        "end" : "flex-end",
+        "center" : "center",
+        "between" : "space-between",
+        "around" : "space-around",
+    ),
+    "align-items" :("start" : "flex-start",
+        "end" : "flex-end",
+        "center" : "center",
+        "baseline" : "baseline",
+        "stretch" : "stretch",
+    ),
+    "align-content" :("start" : 'flex-start',
+        "end" : 'flex-end',
+        "center" : 'center',
+        "between" : 'space-between',
+        "around" : 'space-around',
+        "stretch" : 'stretch',
+    ),
+    "align-self" :("auto" : "auto",
+        "start" : "flex-start",
+        "end" : "flex-end",
+        "center" : "center",
+        "baseline" : "baseline",
+        "stretch" : "stretch",
+    ),
+);

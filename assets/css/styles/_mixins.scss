@@ -1,0 +1,48 @@
+@mixin responsive-min ($device) {
+    @media (min-width: $device) {
+        @content;
+    }
+}
+
+@mixin responsive-max ($device) {
+    @media (max-width: $device) {
+        @content;
+    }
+}
+
+
+@mixin value-iterator($property, $class, $map) {
+    @each $value in $map {
+        .#{$class}#{$value} {
+            #{$property}: #{$value};
+        }
+    }
+}
+
+@mixin generateText($num) {
+    @for $i from 1 through $num {
+        @if $num >0 {
+            $num: $num - 2;
+
+            .text-#{$num} {
+                font-size: #{$num}px;
+            }
+        }
+    }
+}
+
+@include generateText(64);
+
+@mixin generateFlexGap($num) {
+    @for $i from 1 through $num {
+        @if $num >0 {
+            $num: $num - 2;
+
+            .gap-#{$num} {
+                gap: #{$num}px;
+            }
+        }
+    }
+}
+
+@include generateFlexGap(36);

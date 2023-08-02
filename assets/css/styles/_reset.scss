@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none !important;
+}
+
+body {
+    font-family: "DM-sans", "sans-serif", "arial";
+
+    [dir="rtl"] & {
+        font-family: "Cairo-arabic-sans", "serif";
+    }
+}
