@@ -22,9 +22,5 @@ a:-webkit-any-link {
 }
 
 body {
-    font-family: "DM-sans", "sans-serif", "arial";
-
-    [dir="rtl"] & {
-        font-family: "Cairo-arabic-sans", "serif";
-    }
+    font-family: "Poppins", "sans-serif", "arial";
 }
