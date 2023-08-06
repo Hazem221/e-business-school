@@ -329,6 +329,11 @@ body {
     text-align: start !important;
   }
 }
+.w-100 {
+  width: 100%;
+  max-width: 100%;
+}
+
 .container,
 .container-fluid,
 .container-sm,
@@ -6082,4 +6087,107 @@ body {
 
 .font-weight-900 {
   font-weight: 900;
+}
+
+.about__title {
+  margin-bottom: 30px;
+  font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+}
+@media (max-width: 576px) {
+  .about__title {
+    margin-bottom: 12px;
+  }
+}
+.about__content {
+  max-width: 80%;
+  margin-bottom: 60px;
+}
+@media (max-width: 992px) {
+  .about__content {
+    max-width: 100%;
+  }
+}
+.about__description {
+  line-height: 40px;
+  opacity: 0.7;
+  font-size: clamp(0.75rem, 0.375rem + 1.6667vw, 1.25rem);
+}
+@media (max-width: 576px) {
+  .about__description {
+    line-height: 23px;
+  }
+}
+.about__partners {
+  max-width: 90%;
+  margin-bottom: 50px;
+}
+@media (max-width: 992px) {
+  .about__partners {
+    max-width: 100%;
+  }
+}
+.about__partners__title {
+  font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+}
+.about__partners__slogan {
+  opacity: 0.7;
+  font-size: clamp(0.75rem, 0.375rem + 1.6667vw, 1.25rem);
+}
+@media (max-width: 576px) {
+  .about__partners__slogan {
+    margin-bottom: 20px;
+  }
+}
+.about__partners__logos img {
+  max-width: 210px;
+}
+.about__news-letters {
+  background-color: #121212;
+}
+.about__news-letters__title {
+  font-size: clamp(1.625rem, 1.1563rem + 2.0833vw, 2.25rem);
+}
+.about__news-letters__content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 576px) {
+  .about__news-letters__content {
+    padding-bottom: 20px;
+  }
+}
+.about__news-letters__description {
+  font-size: clamp(0.75rem, 0.6563rem + 0.4167vw, 0.875rem);
+  line-height: 30px;
+}
+@media (max-width: 576px) {
+  .about__news-letters__description {
+    line-height: 24px;
+  }
+}
+.about__news-letters__subscribe-input {
+  border: 1px solid #DADBDC;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 500px;
+  margin-bottom: 80px !important;
+}
+.about__news-letters__subscribe-input input {
+  border: none;
+  border-radius: 30px;
+  padding: 13px;
+}
+.about__news-letters__subscribe-input input:focus {
+  outline: none;
+}
+.about__news-letters__subscribe-input button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  width: 65px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 4px 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
