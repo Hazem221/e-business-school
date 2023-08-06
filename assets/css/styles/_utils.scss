@@ -2,3 +2,46 @@
     width: 100%;
     max-width: 100%;
 }
+
+.radius-full {
+    border-radius: 50%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+    &--white {
+        background-color: #fff;
+        color: #002457;
+        border: none;
+
+        &:hover {
+            background-color: #002457;
+            color: #fff;
+        }
+    }
+
+    &--primary {
+        border: 1px solid #002457;
+        background-color: #002457;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #002457;
+        }
+    }
+}
