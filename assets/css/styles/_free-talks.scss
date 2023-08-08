@@ -1,0 +1,32 @@
+.free-talks {
+    &__title {
+        margin-bottom: 40px;
+        font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+
+        @media (max-width : 576px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .card {
+        margin-bottom: 2.5rem;
+        max-width: 320px;
+
+
+        &__image {
+            // max-width: 320px;
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        &__talk-title {
+            line-height: 25px;
+            max-width: 80%;
+        }
+
+        &__author {
+            color: #000;
+            opacity: 0.5;
+        }
+    }
+}

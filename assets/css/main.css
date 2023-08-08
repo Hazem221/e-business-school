@@ -6531,4 +6531,30 @@ body {
 }
 .companies .wrapper .company-details__website:hover, .companies .wrapper .company-details__phone:hover {
   opacity: 1;
+}
+
+.free-talks__title {
+  margin-bottom: 40px;
+  font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+}
+@media (max-width: 576px) {
+  .free-talks__title {
+    margin-bottom: 20px;
+  }
+}
+.free-talks .card {
+  margin-bottom: 2.5rem;
+  max-width: 320px;
+}
+.free-talks .card__image {
+  max-height: 200px;
+  overflow: hidden;
+}
+.free-talks .card__talk-title {
+  line-height: 25px;
+  max-width: 80%;
+}
+.free-talks .card__author {
+  color: #000;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
