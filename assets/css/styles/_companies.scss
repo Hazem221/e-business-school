@@ -1,0 +1,102 @@
+.companies {
+    &__title {
+        font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+    }
+
+    &__slider {
+        margin-bottom: 48px;
+        margin-top: 30px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .tag {
+            transition: all 0.3s ease-in-out;
+            font-size: 14px;
+            padding: 7px 40px;
+            margin-right: 10px;
+            white-space: nowrap;
+            background-color: #fff;
+            color: #07245483;
+            border: 1px solid #072554;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+                background-color: #909DAF;
+                color: #fff;
+            }
+        }
+
+        &__prev-button,
+        &__next-button {
+            position: absolute;
+            top: 1px;
+            z-index: 999;
+            border-radius: 50%;
+            padding: 3px 5px;
+            background-color: #8D9DB1;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #000;
+            }
+        }
+
+        &__next-button {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+
+        &__prev-button {
+            width: 36px;
+            height: 34px;
+            right: 0;
+        }
+
+        .slick-disabled {
+            display: none !important;
+        }
+    }
+
+    &__company-type {
+        font-size: clamp(1.125rem, 0.6563rem + 2.0833vw, 1.75rem);
+        margin-bottom: clamp(1.438rem, 1.0165rem + 1.8733vw, 2rem);
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        @media (max-width : 992px) {
+            grid-template-columns: 1fr;
+        }
+
+        .company-details {
+            margin-bottom: 25px;
+
+            &__phone,
+            &__website,
+            &__address {
+                color: #000000;
+                opacity: 0.7;
+                display: block;
+            }
+
+            &__website,
+            &__phone {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+
+    }
+}

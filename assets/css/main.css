@@ -6453,4 +6453,82 @@ body {
 }
 .monitoring .our-mentors__card__jop-description {
   line-height: 22px;
+}
+
+.companies__title {
+  font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+}
+.companies__slider {
+  margin-bottom: 48px;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.companies__slider .tag {
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  padding: 7px 40px;
+  margin-right: 10px;
+  white-space: nowrap;
+  background-color: #fff;
+  color: rgba(7, 36, 84, 0.5137254902);
+  border: 1px solid #072554;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.companies__slider .tag:hover, .companies__slider .tag.active {
+  background-color: #909DAF;
+  color: #fff;
+}
+.companies__slider__prev-button, .companies__slider__next-button {
+  position: absolute;
+  top: 1px;
+  z-index: 999;
+  border-radius: 50%;
+  padding: 3px 5px;
+  background-color: #8D9DB1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.companies__slider__prev-button:hover, .companies__slider__next-button:hover {
+  background-color: #000;
+}
+.companies__slider__next-button img {
+  transform: rotate(180deg);
+}
+.companies__slider__prev-button {
+  width: 36px;
+  height: 34px;
+  right: 0;
+}
+.companies__slider .slick-disabled {
+  display: none !important;
+}
+.companies__company-type {
+  font-size: clamp(1.125rem, 0.6563rem + 2.0833vw, 1.75rem);
+  margin-bottom: clamp(1.438rem, 1.0165rem + 1.8733vw, 2rem);
+}
+.companies .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+@media (max-width: 992px) {
+  .companies .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.companies .wrapper .company-details {
+  margin-bottom: 25px;
+}
+.companies .wrapper .company-details__phone, .companies .wrapper .company-details__website, .companies .wrapper .company-details__address {
+  color: #000000;
+  opacity: 0.7;
+  display: block;
+}
+.companies .wrapper .company-details__website:hover, .companies .wrapper .company-details__phone:hover {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
