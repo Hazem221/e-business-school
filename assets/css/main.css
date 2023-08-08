@@ -224,6 +224,126 @@ body {
   gap: 0px;
 }
 
+.radius-58 {
+  border-radius: 58px;
+}
+
+.radius-56 {
+  border-radius: 56px;
+}
+
+.radius-54 {
+  border-radius: 54px;
+}
+
+.radius-52 {
+  border-radius: 52px;
+}
+
+.radius-50 {
+  border-radius: 50px;
+}
+
+.radius-48 {
+  border-radius: 48px;
+}
+
+.radius-46 {
+  border-radius: 46px;
+}
+
+.radius-44 {
+  border-radius: 44px;
+}
+
+.radius-42 {
+  border-radius: 42px;
+}
+
+.radius-40 {
+  border-radius: 40px;
+}
+
+.radius-38 {
+  border-radius: 38px;
+}
+
+.radius-36 {
+  border-radius: 36px;
+}
+
+.radius-34 {
+  border-radius: 34px;
+}
+
+.radius-32 {
+  border-radius: 32px;
+}
+
+.radius-30 {
+  border-radius: 30px;
+}
+
+.radius-28 {
+  border-radius: 28px;
+}
+
+.radius-26 {
+  border-radius: 26px;
+}
+
+.radius-24 {
+  border-radius: 24px;
+}
+
+.radius-22 {
+  border-radius: 22px;
+}
+
+.radius-20 {
+  border-radius: 20px;
+}
+
+.radius-18 {
+  border-radius: 18px;
+}
+
+.radius-16 {
+  border-radius: 16px;
+}
+
+.radius-14 {
+  border-radius: 14px;
+}
+
+.radius-12 {
+  border-radius: 12px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.radius-6 {
+  border-radius: 6px;
+}
+
+.radius-4 {
+  border-radius: 4px;
+}
+
+.radius-2 {
+  border-radius: 2px;
+}
+
+.radius-0 {
+  border-radius: 0px;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -332,6 +452,43 @@ body {
 .w-100 {
   width: 100%;
   max-width: 100%;
+}
+
+.radius-full {
+  border-radius: 50%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  min-width: 170px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn--white {
+  background-color: #fff;
+  color: #002457;
+  border: none;
+}
+.btn--white:hover {
+  background-color: #002457;
+  color: #fff;
+}
+.btn--primary {
+  border: 1px solid #002457;
+  background-color: #002457;
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: #fff;
+  color: #002457;
 }
 
 .container,
@@ -2095,6 +2252,42 @@ body {
 
 .fill-transparent {
   fill: rgba(255, 255, 255, 0);
+}
+
+.text-primary {
+  color: #002457;
+}
+
+.bg-primary {
+  background-color: #002457;
+}
+
+.fill-primary {
+  fill: #002457;
+}
+
+.text-secondary {
+  color: #0091FF;
+}
+
+.bg-secondary {
+  background-color: #0091FF;
+}
+
+.fill-secondary {
+  fill: #0091FF;
+}
+
+.text-gray-900 {
+  color: #373535;
+}
+
+.bg-gray-900 {
+  background-color: #373535;
+}
+
+.fill-gray-900 {
+  fill: #373535;
 }
 
 .pt-0 {
@@ -6132,6 +6325,7 @@ body {
 .about__partners__slogan {
   opacity: 0.7;
   font-size: clamp(0.75rem, 0.375rem + 1.6667vw, 1.25rem);
+  margin-bottom: 40px;
 }
 @media (max-width: 576px) {
   .about__partners__slogan {
@@ -6190,6 +6384,75 @@ body {
   text-align: center;
   margin: 4px 16px;
   cursor: pointer;
+}
+
+.monitoring .cover {
+  background-color: #000;
+  min-height: 300px;
+  margin-bottom: 50px;
+  background-image: url("https://placehold.co/2000x300");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.monitoring .cover__title {
+  font-size: clamp(1rem, -0.125rem + 5vw, 2.5rem);
+  max-width: 700px;
+  line-height: 60px;
+}
+@media (max-width: 576px) {
+  .monitoring .cover__title {
+    line-height: 30px;
+  }
+}
+.monitoring .content {
+  margin-bottom: 45px;
+}
+@media (max-width: 992px) {
+  .monitoring .content {
+    max-width: 100%;
+  }
+}
+.monitoring .content__desc {
+  line-height: 25px;
+}
+.monitoring .about-program {
+  margin-bottom: 60px;
+}
+.monitoring .about-section {
+  margin-bottom: 35px;
+}
+.monitoring .about-section__icon {
+  max-width: 65px;
+  max-height: 65px;
+}
+.monitoring .about-section__content {
+  border-left: 1px solid rgba(55, 53, 53, 0.22);
+  padding-inline-start: 32px;
+}
+@media (max-width: 992px) {
+  .monitoring .about-section__content {
+    border-left: none;
+    padding-inline-start: 0;
+  }
+}
+.monitoring .our-mentors {
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+.monitoring .our-mentors__card {
+  flex-basis: 30%;
+}
+.monitoring .our-mentors__card__image {
+  overflow: hidden;
+  max-width: 290px;
+  max-height: 290px;
+}
+.monitoring .our-mentors__card__position {
+  color: #072554;
+}
+.monitoring .our-mentors__card__jop-description {
+  line-height: 22px;
 }
 
 .companies__title {

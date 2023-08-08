@@ -46,3 +46,19 @@
 }
 
 @include generateFlexGap(36);
+
+
+@mixin generateRadius($num) {
+    @for $i from 1 through $num {
+        @if $num >0 {
+            $num: $num - 2;
+
+            .radius-#{$num} {
+                border-radius: #{$num}px;
+            }
+
+        }
+    }
+}
+
+@include generateRadius(60);
