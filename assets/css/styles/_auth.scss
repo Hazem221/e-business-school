@@ -1,3 +1,31 @@
+%auth-side-image {
+    width: 52%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    padding: 3rem;
+    // background-position-x: left;
+
+
+    p {
+        font-style: italic;
+        font-weight: 300;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    @media (max-width : 1200px) and (min-width : 767px) {
+        width: 40%;
+    }
+
+    @media (max-width : 767px) {
+        display: none;
+    }
+}
+
 html {
     height: 100%;
 }
@@ -6,41 +34,36 @@ body {
     height: 100%;
 }
 
-.login {
+.auth {
     height: 100%;
     display: flex;
 
 
-    &__side-image {
-        width: 52%;
-        height: 100%;
-        background-image: url('https://placehold.co/2000x300');
+    &__login-image {
+        @extend %auth-side-image;
         background: url("../../assets/images/login.png") top no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: end;
-        padding: 37px;
+    }
 
-        p {
-            font-style: italic;
-            font-weight: 300;
+    &__booking-image {
+        @extend %auth-side-image;
+        background: url("../../assets/images/booking.png") top no-repeat;
 
-            span {
-                font-weight: 500;
-            }
-        }
-
-        @media (max-width : 1200px) and (min-width : 767px) {
-            width: 40%;
-        }
-
-        @media (max-width : 767px) {
-            display: none;
-        }
     }
 
     &__form {
-        width: 45%;
+        width: 43%;
+
+        &__booking-title {
+            margin-bottom: 42px;
+
+            img {
+                width: 2rem;
+            }
+        }
+
+        &__terms {
+            margin-bottom: 40px;
+        }
 
         .wrapper {
             max-width: 450px;
@@ -55,7 +78,7 @@ body {
                 height: calc(3rem + 2px);
                 margin: 0 0 1rem;
                 padding: 1em;
-                border: 1px solid #ccc;
+                border: 1px solid #00000060;
                 border-radius: 10px;
                 background: #fff;
                 resize: none;

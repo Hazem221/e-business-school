@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <section class="auth">
+        <div class="auth__booking-image">
+            <p class="text-white text-24">One of the most important areas we can develop as professionals is
+                <span>
+                    competence in accessing and
+                    sharing knowledge.
+                </span>
+            </p>
+        </div>
+        <div class="auth__form my-auto">
+            <div class="wrapper">
+                <h1 class="auth__form__booking-title text-black font-weight-500 text-22">
+                    <a class="text-black" href="/monitoring.html"> <img src="./assets/images/return-to-home.png" alt="">
+                        Book Mentoring</a>
+                </h1>
+
+                <form class="mb-6">
+
+                    <div class="col-12 col-md-6 mb-4">
+                        <label for="tool-name" class="mb-2 d-block text-gray-2">Single select</label>
+                        <select id="single" class="js-states form-control">
+                            <option>Java</option>
+                            <option>Javascript</option>
+                            <option>PHP</option>
+                            <option>Visual Basic</option>
+                        </select>
+                    </div>
+
+                    <p class="auth__form__terms text-center text-gray-500 text-12">
+                        By continuing, you agree to E-business school <a class="text-primary" href="#">Terms of
+                            Service,</a> <a class="text-primary" href="#">Privacy Policy</a>
+                    </p>
+
+                    <button class="btn btn--primary text-16 w-100 py-5">
+                        Book Now
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+        <script>
+
+            $("#single").select2({
+                placeholder: "Select a programming language",
+                allowClear: true
+            });
+        </script>
+</body>
+
+</html>

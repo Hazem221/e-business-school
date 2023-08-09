@@ -6595,6 +6595,32 @@ body {
   opacity: 0.5;
 }
 
+.auth__booking-image, .auth__login-image {
+  width: 52%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  padding: 3rem;
+}
+.auth__booking-image p, .auth__login-image p {
+  font-style: italic;
+  font-weight: 300;
+}
+.auth__booking-image p span, .auth__login-image p span {
+  font-weight: 500;
+}
+@media (max-width: 1200px) and (min-width: 767px) {
+  .auth__booking-image, .auth__login-image {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .auth__booking-image, .auth__login-image {
+    display: none;
+  }
+}
+
 html {
   height: 100%;
 }
@@ -6603,39 +6629,18 @@ body {
   height: 100%;
 }
 
-.login {
+.auth {
   height: 100%;
   display: flex;
 }
-.login__side-image {
-  width: 52%;
-  height: 100%;
-  background-image: url("https://placehold.co/2000x300");
+.auth__login-image {
   background: url("../../assets/images/login.png") top no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: end;
-  padding: 37px;
 }
-.login__side-image p {
-  font-style: italic;
-  font-weight: 300;
+.auth__booking-image {
+  background: url("../../assets/images/booking.png") top no-repeat;
 }
-.login__side-image p span {
-  font-weight: 500;
-}
-@media (max-width: 1200px) and (min-width: 767px) {
-  .login__side-image {
-    width: 40%;
-  }
-}
-@media (max-width: 767px) {
-  .login__side-image {
-    display: none;
-  }
-}
-.login__form {
-  width: 45%;
+.auth__form {
+  width: 43%;
   /*remeber me */
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
@@ -6645,46 +6650,55 @@ body {
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */
 }
-.login__form .wrapper {
+.auth__form__booking-title {
+  margin-bottom: 42px;
+}
+.auth__form__booking-title img {
+  width: 2rem;
+}
+.auth__form__terms {
+  margin-bottom: 40px;
+}
+.auth__form .wrapper {
   max-width: 450px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.login__form .wrapper input {
+.auth__form .wrapper input {
   box-sizing: border-box;
   width: 100%;
   height: calc(3rem + 2px);
   margin: 0 0 1rem;
   padding: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.3764705882);
   border-radius: 10px;
   background: #fff;
   resize: none;
   outline: none;
 }
-.login__form .wrapper input[required]:focus {
+.auth__form .wrapper input[required]:focus {
   border-color: #69CBE1;
 }
-.login__form .wrapper input[required]:focus + label[placeholder]:before {
+.auth__form .wrapper input[required]:focus + label[placeholder]:before {
   color: #030303;
 }
-.login__form .wrapper input[required]:focus + label[placeholder]:before, .login__form .wrapper input[required]:valid + label[placeholder]:before {
+.auth__form .wrapper input[required]:focus + label[placeholder]:before, .auth__form .wrapper input[required]:valid + label[placeholder]:before {
   transition-duration: 0.2s;
   transform: translate(0, -1.5em) scale(0.9, 0.9);
 }
-.login__form .wrapper input[required]:invalid + label[placeholder][alt]:before {
+.auth__form .wrapper input[required]:invalid + label[placeholder][alt]:before {
   content: attr(alt);
 }
-.login__form .wrapper input[required] + label[placeholder] {
+.auth__form .wrapper input[required] + label[placeholder] {
   display: block;
   pointer-events: none;
   line-height: 1.25em;
   margin-top: calc(-3em - 2px);
   margin-bottom: calc(2em + 2px);
 }
-.login__form .wrapper input[required] + label[placeholder]:before {
+.auth__form .wrapper input[required] + label[placeholder]:before {
   content: attr(placeholder);
   display: inline-block;
   margin: 0 calc(1em + 2px);
@@ -6697,7 +6711,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.login__form .remember-me {
+.auth__form .remember-me {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -6709,14 +6723,14 @@ body {
   user-select: none;
   color: #333333;
 }
-.login__form .remember-me input {
+.auth__form .remember-me input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.login__form .checkmark {
+.auth__form .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -6725,21 +6739,21 @@ body {
   background-color: #eee;
   border-radius: 50%;
 }
-.login__form .remember-me:hover input ~ .checkmark {
+.auth__form .remember-me:hover input ~ .checkmark {
   background-color: #ccc;
 }
-.login__form .remember-me input:checked ~ .checkmark {
+.auth__form .remember-me input:checked ~ .checkmark {
   background-color: #6bba15;
 }
-.login__form .checkmark:after {
+.auth__form .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.login__form .remember-me input:checked ~ .checkmark:after {
+.auth__form .remember-me input:checked ~ .checkmark:after {
   display: block;
 }
-.login__form .remember-me .checkmark:after {
+.auth__form .remember-me .checkmark:after {
   left: 7px;
   top: 5px;
   width: 3px;
@@ -6749,12 +6763,12 @@ body {
   transform: rotate(45deg);
 }
 @media (max-width: 1200px) and (min-width: 767px) {
-  .login__form {
+  .auth__form {
     width: 60%;
   }
 }
 @media (max-width: 767px) {
-  .login__form {
+  .auth__form {
     width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
