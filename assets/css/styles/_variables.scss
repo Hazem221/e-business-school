@@ -9,12 +9,16 @@ $device-xxl: 1400px !default;
 $colors: (
     'black' : #000,
     'white' : #fff,
+    'red' : #EE3342,
     'transparent' :#ffffff00,
     'primary' : #002457,
     'secondary' : #0091FF,
+    'light-blue' : #69CBE1,
 
     // gray
-    'gray-900' : #373535
+    'gray-900' : #373535,
+    'gray-500' : #9EA0A5,
+
 );
 
 $text-algins: (

@@ -2242,6 +2242,18 @@ body {
   fill: #fff;
 }
 
+.text-red {
+  color: #EE3342;
+}
+
+.bg-red {
+  background-color: #EE3342;
+}
+
+.fill-red {
+  fill: #EE3342;
+}
+
 .text-transparent {
   color: rgba(255, 255, 255, 0);
 }
@@ -2278,6 +2290,18 @@ body {
   fill: #0091FF;
 }
 
+.text-light-blue {
+  color: #69CBE1;
+}
+
+.bg-light-blue {
+  background-color: #69CBE1;
+}
+
+.fill-light-blue {
+  fill: #69CBE1;
+}
+
 .text-gray-900 {
   color: #373535;
 }
@@ -2288,6 +2312,18 @@ body {
 
 .fill-gray-900 {
   fill: #373535;
+}
+
+.text-gray-500 {
+  color: #9EA0A5;
+}
+
+.bg-gray-500 {
+  background-color: #9EA0A5;
+}
+
+.fill-gray-500 {
+  fill: #9EA0A5;
 }
 
 .pt-0 {
@@ -6557,4 +6593,170 @@ body {
 .free-talks .card__author {
   color: #000;
   opacity: 0.5;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.login {
+  height: 100%;
+  display: flex;
+}
+.login__side-image {
+  width: 52%;
+  height: 100%;
+  background-image: url("https://placehold.co/2000x300");
+  background: url("../../assets/images/login.png") top no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  padding: 37px;
+}
+.login__side-image p {
+  font-style: italic;
+  font-weight: 300;
+}
+.login__side-image p span {
+  font-weight: 500;
+}
+@media (max-width: 1200px) and (min-width: 767px) {
+  .login__side-image {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .login__side-image {
+    display: none;
+  }
+}
+.login__form {
+  width: 45%;
+  /*remeber me */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.login__form .wrapper {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login__form .wrapper input {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(3rem + 2px);
+  margin: 0 0 1rem;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+.login__form .wrapper input[required]:focus {
+  border-color: #69CBE1;
+}
+.login__form .wrapper input[required]:focus + label[placeholder]:before {
+  color: #030303;
+}
+.login__form .wrapper input[required]:focus + label[placeholder]:before, .login__form .wrapper input[required]:valid + label[placeholder]:before {
+  transition-duration: 0.2s;
+  transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+.login__form .wrapper input[required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+.login__form .wrapper input[required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1.25em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc(2em + 2px);
+}
+.login__form .wrapper input[required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login__form .remember-me {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #333333;
+}
+.login__form .remember-me input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.login__form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.login__form .remember-me:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.login__form .remember-me input:checked ~ .checkmark {
+  background-color: #6bba15;
+}
+.login__form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.login__form .remember-me input:checked ~ .checkmark:after {
+  display: block;
+}
+.login__form .remember-me .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+@media (max-width: 1200px) and (min-width: 767px) {
+  .login__form {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .login__form {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

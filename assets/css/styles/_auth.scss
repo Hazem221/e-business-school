@@ -1,0 +1,183 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.login {
+    height: 100%;
+    display: flex;
+
+
+    &__side-image {
+        width: 52%;
+        height: 100%;
+        background-image: url('https://placehold.co/2000x300');
+        background: url("../../assets/images/login.png") top no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        padding: 37px;
+
+        p {
+            font-style: italic;
+            font-weight: 300;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        @media (max-width : 1200px) and (min-width : 767px) {
+            width: 40%;
+        }
+
+        @media (max-width : 767px) {
+            display: none;
+        }
+    }
+
+    &__form {
+        width: 45%;
+
+        .wrapper {
+            max-width: 450px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            input {
+                box-sizing: border-box;
+                width: 100%;
+                height: calc(3rem + 2px);
+                margin: 0 0 1rem;
+                padding: 1em;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background: #fff;
+                resize: none;
+                outline: none;
+
+                &[required]:focus {
+                    border-color: #69CBE1;
+                }
+
+                &[required]:focus+label[placeholder]:before {
+                    color: #030303;
+                }
+
+                &[required]:focus+label[placeholder]:before,
+                &[required]:valid+label[placeholder]:before {
+                    transition-duration: 0.2s;
+                    transform: translate(0, -1.5em) scale(0.9, 0.9);
+                }
+
+                &[required]:invalid+label[placeholder][alt]:before {
+                    content: attr(alt);
+                }
+
+                &[required]+label[placeholder] {
+                    display: block;
+                    pointer-events: none;
+                    line-height: 1.25em;
+                    margin-top: calc(-3em - 2px);
+                    margin-bottom: calc((3em - 1em) + 2px);
+                }
+
+                &[required]+label[placeholder]:before {
+                    content: attr(placeholder);
+                    display: inline-block;
+                    margin: 0 calc(1em + 2px);
+                    padding: 0 2px;
+                    color: #898989;
+                    white-space: nowrap;
+                    transition: 0.3s ease-in-out;
+                    background-image: linear-gradient(to bottom, #fff, #fff);
+                    background-size: 100% 5px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+
+        /*remeber me */
+        .remember-me {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            font-size: 14px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            color: #333333;
+        }
+
+        /* Hide the browser's default checkbox */
+        .remember-me input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .remember-me:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .remember-me input:checked~.checkmark {
+            background-color: #6bba15;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .remember-me input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .remember-me .checkmark:after {
+            left: 7px;
+            top: 5px;
+            width: 3px;
+            height: 6px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
+
+        @media (max-width : 1200px) and (min-width : 767px) {
+            width: 60%;
+        }
+
+        @media (max-width : 767px) {
+            width: 100%;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+}
