@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="61.3333333px" viewBox="0 0 60 61.3333333" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>EC2D95AC-0B87-41F8-B605-78526D8FB747</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Mentoring" transform="translate(-252.9973, -948.6667)" stroke="#373535" stroke-width="5.5">
+            <g id="people-man-graduate.2" transform="translate(252.9973, 948.6667)">
+                <path d="M44,15.3333333 C44,23.0653198 37.7319865,29.3333333 30,29.3333333 C22.2680135,29.3333333 16,23.0653198 16,15.3333333 L16,1.33333333 L44,1.33333333 L44,15.3333333 Z" id="Path"></path>
+                <path d="M4,61.3333333 C4,46.9739298 15.6405965,35.3333333 30,35.3333333 C44.3594035,35.3333333 56,46.9739298 56,61.3333333" id="Path"></path>
+                <line x1="0" y1="1.33333333" x2="60" y2="1.33333333" id="Path"></line>
+                <line x1="16" y1="13.3333333" x2="44" y2="13.3333333" id="Path"></line>
+                <line x1="4" y1="1.33333333" x2="4" y2="21.3333333" id="Path"></line>
+                <polyline id="Path" points="16.7013333 38.9893333 30 49.3333333 43.2986667 38.9893333"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

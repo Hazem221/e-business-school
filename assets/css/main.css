@@ -6426,10 +6426,8 @@ body {
   background-color: #000;
   min-height: 300px;
   margin-bottom: 50px;
-  background-image: url("https://placehold.co/2000x300");
+  background: url("../../assets/images/mentoring-cover.png") center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .monitoring .cover__title {
   font-size: clamp(1rem, -0.125rem + 5vw, 2.5rem);
@@ -6454,6 +6452,9 @@ body {
 }
 .monitoring .about-program {
   margin-bottom: 60px;
+}
+.monitoring .about-program__content {
+  line-height: 30px;
 }
 .monitoring .about-section {
   margin-bottom: 35px;

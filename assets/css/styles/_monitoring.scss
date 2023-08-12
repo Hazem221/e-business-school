@@ -3,10 +3,8 @@
         background-color: #000;
         min-height: 300px;
         margin-bottom: 50px;
-        background-image: url('https://placehold.co/2000x300');
+        background: url("../../assets/images/mentoring-cover.png") center no-repeat;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
 
         &__title {
             font-size: clamp(1rem, -0.1250rem + 5.0000vw, 2.5rem);
@@ -34,6 +32,10 @@
 
     .about-program {
         margin-bottom: 60px;
+
+        &__content {
+            line-height: 30px;
+        }
     }
 
 
