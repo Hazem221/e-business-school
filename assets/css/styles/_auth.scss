@@ -79,7 +79,6 @@ body {
 
 
             // booking form select
-
             .select2-container--default .select2-selection--single {
                 background-color: #fff;
                 border: 1px solid #011C42;
@@ -104,6 +103,22 @@ body {
             span.select2-dropdown.select2-dropdown--below {
                 border: 1px solid #011C42;
             }
+
+            // booking form select
+
+
+            // sign up two columns 
+            .two-columns {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+            }
+
+            .last-part {
+                display: none;
+            }
+
+            // sign up two columns 
 
 
             input {

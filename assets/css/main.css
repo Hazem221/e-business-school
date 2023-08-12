@@ -6693,6 +6693,14 @@ body {
 .auth__form .wrapper span.select2-dropdown.select2-dropdown--below {
   border: 1px solid #011C42;
 }
+.auth__form .wrapper .two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.auth__form .wrapper .last-part {
+  display: none;
+}
 .auth__form .wrapper input {
   box-sizing: border-box;
   width: 100%;

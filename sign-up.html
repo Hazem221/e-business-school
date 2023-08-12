@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="./2-select/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <section class="auth">
+        <div class="auth__login-image">
+            <p class="text-white text-24">One of the most important areas we can develop as professionals is
+                <span>
+                    competence in accessing and
+                    sharing knowledge.
+                </span>
+            </p>
+        </div>
+        <div class="auth__form my-auto">
+            <div class="wrapper">
+                <div class="auth__form__logo">
+                    <img class="w-100" src="./assets/images/logo.png" alt="logo">
+                </div>
+
+                <form class="mb-6">
+                    <section class="first-part">
+                        <h1 class="text-black font-weight-500 text-22 mb-2">Sign up</h1>
+                        <p class="text-gray-500 text-14 mb-5">Enter your info to create a new account</p>
+
+                        <div class="two-columns">
+                            <div>
+                                <input required='' type='text'>
+                                <label alt='First name' placeholder='First name'></label>
+                            </div>
+                            <div>
+                                <input required='' type='text'>
+                                <label alt='Last name' placeholder='Last name'></label>
+                            </div>
+                        </div>
+
+                        <input required='' type='email'>
+                        <label alt='Email' placeholder='Email'></label>
+
+
+                        <div class="two-columns">
+                            <div>
+                                <input required='' type='password'>
+                                <label alt='password' placeholder='password'></label>
+                            </div>
+
+                            <div>
+                                <input required='' type='password'>
+                                <label alt='Re-enter password' placeholder='Re-enter password'></label>
+                            </div>
+
+                        </div>
+
+
+                        <button id="next-button" class="btn btn--primary text-16 w-100 py-5">
+                            Next
+                        </button>
+                    </section>
+                    <section class="last-part">
+                        <h1 id="prev-button"
+                            class="auth__form__booking-title cursor-pointer text-black font-weight-500 text-22">
+                            <img src="./assets/images/return-to-home.png" alt="">
+                            <span>
+                                Sign up
+                            </span>
+                        </h1>
+
+                        <div class="p-0 mb-4">
+                            <select id="select-course" class="js-states form-control">
+                                <option></option>
+                                <option>English</option>
+                                <option>Accounting</option>
+                                <option>Marketing</option>
+                            </select>
+                        </div>
+
+                        <div class="p-0 mb-4">
+                            <select id="payment-method" class="js-states form-control">
+                                <option></option>
+                                <option>Visa</option>
+                                <option>Vodafone</option>
+                                <option>MasterCard</option>
+                            </select>
+                        </div>
+
+                        <input required='' type='number'>
+                        <label alt='Vodafone cash number' placeholder='Vodafone cash number'></label>
+
+
+                        <p class="auth__form__terms text-center text-gray-500 mb-6 text-12">
+                            By continuing, you agree to E-business school <a class="text-primary" href="#">Terms of
+                                Service,</a> <a class="text-primary" href="#">Privacy Policy</a>
+                        </p>
+
+                        <button id="next-button" class="btn btn--primary text-16 w-100 py-5">
+                            Sign up
+                        </button>
+                    </section>
+                </form>
+
+                <div class="text-center mb-6">
+                    <p class="text-14 text-gray-500 mb-4" href="/forget-passowrd">Already have an account?</p>
+                    <a class="text-light-blue text-16 font-weight-500" href="/login.html">Login</a>
+                </div>
+
+            </div>
+        </div>
+        <script src="./js/jquery.js"></script>
+        <script src="./2-select/js/select2.min.js"></script>
+
+        <script>
+            let firstBart = document.querySelector('.first-part');
+            let lastBart = document.querySelector('.last-part');
+
+            let nextBtn = document.getElementById('next-button').addEventListener('click', function (e) {
+                e.preventDefault();
+                firstBart.style.display = 'none';
+                lastBart.style.display = 'block';
+            });
+
+            let prevBtn = document.getElementById('prev-button').addEventListener('click', function (e) {
+                e.preventDefault();
+                firstBart.style.display = 'block';
+                lastBart.style.display = 'none';
+            });
+
+            $("#payment-method").select2({
+                placeholder: "Select payment method",
+            });
+
+            $("#select-course").select2({
+                placeholder: "Select a course to join ",
+            });
+        </script>
+</body>
+
+</html>
+
+<style>
+
+</style>
