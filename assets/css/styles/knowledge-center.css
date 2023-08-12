@@ -1,0 +1,55 @@
+.knowledge-center .cover {
+  background-color: #000;
+  min-height: 300px;
+  margin-bottom: 50px;
+  background: url("../../assets/images/knowledge-center-cover.png") center no-repeat;
+  background-size: cover;
+}
+.knowledge-center .cover__title {
+  font-size: clamp(1rem, -0.125rem + 5vw, 2.5rem);
+  max-width: 700px;
+  line-height: 60px;
+}
+@media (max-width: 576px) {
+  .knowledge-center .cover__title {
+    line-height: 30px;
+  }
+}
+.knowledge-center .content {
+  margin-bottom: 45px;
+}
+@media (max-width: 992px) {
+  .knowledge-center .content {
+    max-width: 100%;
+  }
+}
+.knowledge-center .content__desc {
+  line-height: 25px;
+}
+.knowledge-center .master-article {
+  margin-bottom: 60px;
+}
+.knowledge-center .master-article__image-container {
+  overflow: hidden;
+  max-height: 380px;
+}
+.knowledge-center .master-article__content {
+  line-height: 30px;
+}
+.knowledge-center .articles {
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+.knowledge-center .articles .article {
+  flex-basis: 30%;
+}
+.knowledge-center .articles .article__image {
+  overflow: hidden;
+}
+.knowledge-center .articles .article__image img {
+  width: 310px;
+  height: 290px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=knowledge-center.css.map */
