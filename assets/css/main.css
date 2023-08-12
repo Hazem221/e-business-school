@@ -6599,7 +6599,6 @@ body {
 .auth__booking-image, .auth__login-image {
   width: 52%;
   height: 100%;
-  background-size: cover;
   display: flex;
   align-items: end;
   padding: 3rem;
@@ -6636,9 +6635,11 @@ body {
 }
 .auth__login-image {
   background: url("../../assets/images/login.png") top no-repeat;
+  background-size: cover;
 }
 .auth__booking-image {
   background: url("../../assets/images/booking.png") top no-repeat;
+  background-size: cover;
 }
 .auth__form {
   width: 43%;
@@ -6650,6 +6651,11 @@ body {
   /* Create the checkmark/indicator (hidden when not checked) */
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */
+}
+.auth__form__logo {
+  max-width: 100px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .auth__form__booking-title {
   margin-bottom: 42px;
@@ -6666,6 +6672,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.auth__form .wrapper .select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #011C42;
+  border-radius: 10px;
+}
+.auth__form .wrapper span.select2-selection.select2-selection--single {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.auth__form .wrapper span.select2 {
+  width: 100% !important;
+  height: 55px;
+}
+.auth__form .wrapper span.select2-selection__arrow {
+  top: 25% !important;
+}
+.auth__form .wrapper span.select2-dropdown.select2-dropdown--below {
+  border: 1px solid #011C42;
 }
 .auth__form .wrapper input {
   box-sizing: border-box;

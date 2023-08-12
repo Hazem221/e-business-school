@@ -1,11 +1,9 @@
 %auth-side-image {
     width: 52%;
     height: 100%;
-    background-size: cover;
     display: flex;
     align-items: end;
     padding: 3rem;
-    // background-position-x: left;
 
 
     p {
@@ -42,16 +40,23 @@ body {
     &__login-image {
         @extend %auth-side-image;
         background: url("../../assets/images/login.png") top no-repeat;
+        background-size: cover;
     }
 
     &__booking-image {
         @extend %auth-side-image;
         background: url("../../assets/images/booking.png") top no-repeat;
-
+        background-size: cover;
     }
 
     &__form {
         width: 43%;
+
+        &__logo {
+            max-width: 100px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
 
         &__booking-title {
             margin-bottom: 42px;
@@ -71,6 +76,35 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+
+            // booking form select
+
+            .select2-container--default .select2-selection--single {
+                background-color: #fff;
+                border: 1px solid #011C42;
+                border-radius: 10px;
+            }
+
+            span.select2-selection.select2-selection--single {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+            span.select2 {
+                width: 100% !important;
+                height: 55px;
+            }
+
+            span.select2-selection__arrow {
+                top: 25% !important;
+            }
+
+            span.select2-dropdown.select2-dropdown--below {
+                border: 1px solid #011C42;
+            }
+
 
             input {
                 box-sizing: border-box;
