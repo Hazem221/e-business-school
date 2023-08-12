@@ -20,3 +20,106 @@ $breakValue in $breakpoints {
         }
     }
 }
+
+
+
+.nav {
+    background: transparent;
+    transition: all 0.50s ease;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    &__logo {
+        max-width: 100px;
+        color: #FFF;
+        cursor: pointer;
+        border: none;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__search-icon {
+        max-width: 18px;
+    }
+
+
+    &__nav-list {
+        display: flex;
+        list-style: none;
+
+
+        &__list-item {
+            padding: 5px 18px;
+            transition: all 0.50s ease;
+
+            @media (max-width : 1200px) {
+                padding: 5px 5px;
+            }
+
+            a {
+                position: relative;
+                color: #000;
+                margin: 0 5px;
+                font-size: 12px;
+                font-weight: 500;
+
+                &:hover:after {
+                    position: absolute;
+                    content: '';
+                    bottom: -6px;
+                    left: 0;
+                    background-color: #69CBE1;
+                    width: 30px;
+                    height: 2px;
+                }
+
+            }
+
+            .active {
+                &:after {
+                    position: absolute;
+                    content: '';
+                    bottom: -6px;
+                    left: 0;
+                    background-color: #69CBE1;
+                    width: 30px;
+                    height: 2px;
+                }
+            }
+
+            &:last-child {
+                a {
+                    color: #69CBE1;
+                }
+            }
+        }
+    }
+
+
+
+    &__burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap: 6px;
+        cursor: pointer;
+
+        span {
+            background-color: #000;
+            height: 3px;
+            width: 30px;
+            display: block;
+            border-radius: 4px;
+        }
+    }
+}

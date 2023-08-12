@@ -9,6 +9,38 @@
 </head>
 
 <body>
+    <div class="container">
+
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="./assets/images/logo.jpg" alt="">
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <div class="d-flex align-items-center gap-30">
+                <!-- <div class=" nav__search-icon"> -->
+                <img class="d-none d-lg-block nav__search-icon" src="./assets/images/search-icon.svg" alt="">
+                <!-- </div> -->
+                <ul class="d-none d-lg-flex nav__nav-list">
+                    <li class="nav__nav-list__list-item"><a href="">Our Blog</a></li>
+                    <li class="nav__nav-list__list-item"><a class="active" href="">About us</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Free Talks</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Companies</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Knowledge center</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Monitoring</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Login</a></li>
+                </ul>
+
+                <div class="nav__burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
     <section class="about">
         <div class="container">
             <h1 class="about__title text-center text-black font-weight-500">Our story</h1>
@@ -77,6 +109,16 @@
         </div>
 
     </section>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navList = document.querySelector('.nav-list');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navList.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>

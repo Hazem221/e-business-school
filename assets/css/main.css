@@ -449,6 +449,86 @@ body {
     text-align: start !important;
   }
 }
+.nav {
+  background: transparent;
+  transition: all 0.5s ease;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logo {
+  max-width: 100px;
+  color: #FFF;
+  cursor: pointer;
+  border: none;
+}
+.nav__logo img {
+  width: 100%;
+}
+.nav__search-icon {
+  max-width: 18px;
+}
+.nav__nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav__nav-list__list-item {
+  padding: 5px 18px;
+  transition: all 0.5s ease;
+}
+@media (max-width: 1200px) {
+  .nav__nav-list__list-item {
+    padding: 5px 5px;
+  }
+}
+.nav__nav-list__list-item a {
+  position: relative;
+  color: #000;
+  margin: 0 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.nav__nav-list__list-item a:hover:after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 0;
+  background-color: #69CBE1;
+  width: 30px;
+  height: 2px;
+}
+.nav__nav-list__list-item .active:after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 0;
+  background-color: #69CBE1;
+  width: 30px;
+  height: 2px;
+}
+.nav__nav-list__list-item:last-child a {
+  color: #69CBE1;
+}
+.nav__burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 6px;
+  cursor: pointer;
+}
+.nav__burger-menu span {
+  background-color: #000;
+  height: 3px;
+  width: 30px;
+  display: block;
+  border-radius: 4px;
+}
+
 .w-100 {
   width: 100%;
   max-width: 100%;
