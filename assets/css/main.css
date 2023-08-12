@@ -6657,6 +6657,7 @@ body {
   display: flex;
   align-items: end;
   padding: 3rem;
+  min-height: 100vh;
 }
 .auth__booking-image p, .auth__login-image p {
   font-style: italic;
