@@ -6,11 +6,13 @@ let closeSideMenu = document.querySelector(".side-menu__close");
 menu.onclick = () => {
   navList.classList.toggle("active");
   overlay.classList.add("overlay");
+  overlay.classList.remove("d-none");
 };
 
 closeSideMenu.onclick = () => {
   navList.classList.remove("active");
   overlay.classList.remove("overlay");
+  overlay.classList.add("d-none");
 };
 
 // Get all the side menu items
