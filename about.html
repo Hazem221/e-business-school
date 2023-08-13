@@ -40,17 +40,66 @@
             </div>
 
             <div class="side-menu">
+                <div class="overlay"></div>
                 <div class="side-menu__close">
                     <img class="cursor-pointer" src="./assets/images/close-icon.svg" alt="">
                 </div>
+                <p class="side-menu__categories text-36 text-black font-weight-500">Categories</p>
                 <ul class="side-menu__list">
-                    <li class="side-menu__list__item"><a href="">Our Blog</a></li>
-                    <li class="side-menu__list__item"><a class="active" href="">About us</a></li>
-                    <li class="side-menu__list__item"><a href="">Free Talks</a></li>
-                    <li class="side-menu__list__item"><a href="">Companies</a></li>
-                    <li class="side-menu__list__item"><a href="">Knowledge center</a></li>
-                    <li class="side-menu__list__item"><a href="">Monitoring</a></li>
-                    <li class="side-menu__list__item"><a href="">Login</a></li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Digital business
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    E-commerece for startups
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Masktering facebook advertising
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Growth hacking masterclass
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Digital marketing management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Digital marketing
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    E-commerece for startups
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Masktering facebook advertising
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Growth hacking masterclass
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Digital marketing management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">SEO</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Art & Design</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Photography</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Software development</li>
                 </ul>
             </div>
         </nav>
@@ -125,21 +174,7 @@
 
     </section>
     <script src="./js/jquery.js"></script>
-
-    <script>
-        let menu = document.querySelector('.nav__burger-menu');
-        let navList = document.querySelector('.side-menu');
-        let closeSideMenu = document.querySelector('.side-menu__close');
-
-        menu.onclick = () => {
-            navList.classList.toggle('active');
-        }
-
-        closeSideMenu.onclick = () => {
-            navList.classList.remove('active');
-
-        }
-    </script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
