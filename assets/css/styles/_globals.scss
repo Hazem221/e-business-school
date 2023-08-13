@@ -25,14 +25,14 @@ $breakValue in $breakpoints {
 
 .nav {
     background: transparent;
-    transition: all 0.50s ease;
+    transition: all 0.5s ease;
     height: 100px;
     width: 100%;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    overflow: hidden;
 
 
     &__logo {
@@ -121,5 +121,38 @@ $breakValue in $breakpoints {
             display: block;
             border-radius: 4px;
         }
+    }
+
+    .side-menu {
+        list-style: none;
+        position: fixed;
+        right: -750px;
+        top: 0;
+        background-color: #fff;
+        width: 700px;
+        height: 200%;
+        padding-top: 5rem;
+        padding-left: 4rem;
+        z-index: 999;
+
+        &__list {
+            list-style: none;
+        }
+
+        &.active {
+            right: 0;
+        }
+
+        &__close {
+            position: absolute;
+            top: 2rem;
+            right: 24%;
+
+            img {
+                fill: #000;
+                width: 20px;
+            }
+        }
+
     }
 }

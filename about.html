@@ -38,6 +38,21 @@
                 </div>
 
             </div>
+
+            <div class="side-menu">
+                <div class="side-menu__close">
+                    <img class="cursor-pointer" src="./assets/images/close-icon.svg" alt="">
+                </div>
+                <ul class="side-menu__list">
+                    <li class="side-menu__list__item"><a href="">Our Blog</a></li>
+                    <li class="side-menu__list__item"><a class="active" href="">About us</a></li>
+                    <li class="side-menu__list__item"><a href="">Free Talks</a></li>
+                    <li class="side-menu__list__item"><a href="">Companies</a></li>
+                    <li class="side-menu__list__item"><a href="">Knowledge center</a></li>
+                    <li class="side-menu__list__item"><a href="">Monitoring</a></li>
+                    <li class="side-menu__list__item"><a href="">Login</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 
@@ -109,14 +124,20 @@
         </div>
 
     </section>
+    <script src="./js/jquery.js"></script>
 
     <script>
-        let menu = document.querySelector('#menu-icon');
-        let navList = document.querySelector('.nav-list');
+        let menu = document.querySelector('.nav__burger-menu');
+        let navList = document.querySelector('.side-menu');
+        let closeSideMenu = document.querySelector('.side-menu__close');
 
         menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navList.classList.toggle('open');
+            navList.classList.toggle('active');
+        }
+
+        closeSideMenu.onclick = () => {
+            navList.classList.remove('active');
+
         }
     </script>
 </body>
