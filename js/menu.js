@@ -1,13 +1,16 @@
 let menu = document.querySelector(".nav__burger-menu");
 let navList = document.querySelector(".side-menu");
+let overlay = document.querySelector("#overlay");
 let closeSideMenu = document.querySelector(".side-menu__close");
 
 menu.onclick = () => {
   navList.classList.toggle("active");
+  overlay.classList.add("overlay");
 };
 
 closeSideMenu.onclick = () => {
   navList.classList.remove("active");
+  overlay.classList.remove("overlay");
 };
 
 // Get all the side menu items

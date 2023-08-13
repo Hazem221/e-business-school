@@ -123,6 +123,16 @@ $breakValue in $breakpoints {
         }
     }
 
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #0000007e;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+    }
+
     .side-menu {
         list-style: none;
         position: fixed;
