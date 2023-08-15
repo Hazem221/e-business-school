@@ -1,0 +1,56 @@
+.your-class {
+    .slick-dots {
+        top: 50%;
+        right: 0;
+        transform: rotate(90deg);
+        z-index: 999;
+        width: 200px;
+        height: 33px;
+
+        li {
+            button:before {
+                font-size: 12px;
+            }
+
+            &.slick-active button:before {
+                color: #072554;
+                opacity: 0.3;
+            }
+
+            &.slick-active button:before {
+                color: #072554;
+                opacity: 1;
+            }
+        }
+    }
+
+
+    &.slick-initialized.slick-slider.slick-dotted {
+        margin-bottom: 0 !important;
+    }
+
+
+    margin-top: -155px;
+    z-index: 1;
+
+    .first-carousel {
+        background: url("../../../assets/images/slider1.png") top no-repeat;
+        height: calc(100vh + 40px);
+        background-size: cover;
+
+        &__slogan {
+            margin-top: 6rem;
+            font-size: clamp(0.75rem, -0.1875rem + 4.1667vw, 2rem);
+        }
+
+        &__title {
+            font-size: clamp(1.438rem, 0.3130rem + 5.0000vw, 2.938rem);
+        }
+
+
+        &__content {
+            font-size: clamp(0.75rem, 0.5625rem + 0.8333vw, 1rem);
+        }
+
+    }
+}
