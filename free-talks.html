@@ -13,11 +13,34 @@
         <div class="container">
             <h1 class="free-talks__title text-black font-weight-500">Our free talks</h1>
 
+
             <div
                 class="wrapper d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap-wrap gap-14">
 
                 <div class="card">
-                    <div class="card__image radius-8 mb-5">
+                    <div class="card__image radius-8 mb-5 cursor-pointer" onclick="openVideoPopup(0)">
+                        <img class="w-100" src="./assets/images/free-taks-1.png" alt="">
+                    </div>
+                    <div class="card__talk-title mb-3">
+                        <p class="text-16 font-weight-500">
+                            E-commerce product development pitfalls
+                        </p>
+                    </div>
+                    <div class="card__author">
+                        <p class="text-12 ">by Ahmed Maher</p>
+                    </div>
+
+                    <div id="video-popup-0" class="video-popup" onclick="closeVideoPopup(0)">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card__image radius-8 mb-5 cursor-pointer" onclick="openVideoPopup(1)">
                         <img class="w-100" src="https://placehold.co/270x175" alt="">
                     </div>
                     <div class="card__talk-title mb-3">
@@ -27,11 +50,42 @@
                     </div>
                     <div class="card__author">
                         <p class="text-12 ">by Ahmed Maher</p>
+                    </div>
+
+
+                    <div id="video-popup-1" class="video-popup" onclick="closeVideoPopup(1)">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+                    <div class="card__image radius-8 mb-5 cursor-pointer" onclick="openVideoPopup(2)">
+                        <img class="w-100" src="https://placehold.co/270x175" alt="">
+                    </div>
+                    <div class="card__talk-title mb-3">
+                        <p class="text-16 font-weight-500">
+                            E-commerce product development pitfalls
+                        </p>
+                    </div>
+                    <div class="card__author">
+                        <p class="text-12 ">by Ahmed Maher</p>
+                    </div>
+
+                    <div id="video-popup-2" class="video-popup" onclick="closeVideoPopup(2)">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__image radius-8 mb-5">
+                    <div class="card__image radius-8 mb-5 cursor-pointer" onclick="openVideoPopup(3)">
                         <img class="w-100" src="https://placehold.co/270x175" alt="">
                     </div>
                     <div class="card__talk-title mb-3">
@@ -42,25 +96,17 @@
                     <div class="card__author">
                         <p class="text-12 ">by Ahmed Maher</p>
                     </div>
-                </div>
 
-
-                <div class="card">
-                    <div class="card__image radius-8 mb-5">
-                        <img class="w-100" src="https://placehold.co/270x175" alt="">
-                    </div>
-                    <div class="card__talk-title mb-3">
-                        <p class="text-16 font-weight-500">
-                            E-commerce product development pitfalls
-                        </p>
-                    </div>
-                    <div class="card__author">
-                        <p class="text-12 ">by Ahmed Maher</p>
+                    <div id="video-popup-3" class="video-popup" onclick="closeVideoPopup(3)">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__image radius-8 mb-5">
+                    <div class="card__image radius-8 mb-5 cursor-pointer" onclick="openVideoPopup(4)">
                         <img class="w-100" src="https://placehold.co/270x175" alt="">
                     </div>
                     <div class="card__talk-title mb-3">
@@ -70,11 +116,18 @@
                     </div>
                     <div class="card__author">
                         <p class="text-12 ">by Ahmed Maher</p>
+                    </div>
+
+                    <div id="video-popup-4" class="video-popup" onclick="closeVideoPopup(4)">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__image radius-8 mb-5">
+                    <div class="card__image radius-8 mb-5 cursor-pointer" onclick="openVideoPopup(5)">
                         <img class="w-100" src="https://placehold.co/270x175" alt="">
                     </div>
                     <div class="card__talk-title mb-3">
@@ -85,25 +138,54 @@
                     <div class="card__author">
                         <p class="text-12 ">by Ahmed Maher</p>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card__image radius-8 mb-5">
-                        <img class="w-100" src="https://placehold.co/270x175" alt="">
-                    </div>
-                    <div class="card__talk-title mb-3">
-                        <p class="text-16 font-weight-500">
-                            E-commerce product development pitfalls
-                        </p>
-                    </div>
-                    <div class="card__author">
-                        <p class="text-12 ">by Ahmed Maher</p>
+                    <div id="video-popup-5" class="video-popup" onclick="closeVideoPopup(5)">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
 
 
     </section>
+    <script src="./js/jquery.js"></script>
+
+    <script>
+        function openVideoPopup(index) {
+            const videoPopups = document.getElementsByClassName('video-popup');
+            for (let i = 0; i < videoPopups.length; i++) {
+                videoPopups[i].style.display = i === index ? 'flex' : 'none';
+            }
+        }
+
+        // Optional: Add a close button or call this function to close the popup
+        function closeVideoPopup(e) {
+            const videoPopups = document.getElementsByClassName('video-popup');
+            for (let i = 0; i < videoPopups.length; i++) {
+                videoPopups[i].style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
+
+<style>
+    .video-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.264);
+        justify-content: center;
+        align-items: center;
+    }
+</style>
