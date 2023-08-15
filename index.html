@@ -5,11 +5,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Business School</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-    <h1 class="font-weight-lighter d-flex justify-content-center p-6 bg-black text-white">hello</h1>
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <div class="d-flex align-items-center gap-30">
+                <!-- <div class=" nav__search-icon"> -->
+                <img class="d-none d-lg-block nav__search-icon" src="./assets/images/search-icon.svg" alt="">
+                <!-- </div> -->
+                <ul class="d-none d-lg-flex nav__nav-list">
+                    <li class="nav__nav-list__list-item"><a href="">Our Blog</a></li>
+                    <li class="nav__nav-list__list-item"><a class="" href="">About us</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Free Talks</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Companies</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Knowledge center</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Monitoring</a></li>
+                    <li class="nav__nav-list__list-item"><a href="">Login</a></li>
+                </ul>
+
+                <div class="nav__burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="side-menu">
+                <div class="side-menu__close">
+                    <img class="cursor-pointer" src="./assets/images/close-icon.svg" alt="">
+                </div>
+                <p class="side-menu__categories text-36 text-black font-weight-500">Categories</p>
+                <ul class="side-menu__list">
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Digital business
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    E-commerece for startups
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Masktering facebook advertising
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Growth hacking masterclass
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Digital marketing management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Digital marketing
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    E-commerece for startups
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Masktering facebook advertising
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Growth hacking masterclass
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Digital marketing management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">SEO</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Art & Design</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Photography</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Software development</li>
+                </ul>
+
+            </div>
+            <div id="overlay" class="d-none"></div>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="your-class">
+            <div class="first-carousel">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <p class="font-weight-300 text-32 mb-3">It’s not about going digital ... </p>
+                            <h1 class="font-weight-500 text-46 mb-4">
+                                It’s about
+                                The Science Behind it
+                            </h1>
+                            <p class="text-16 mb-6">100% online learning from the best experties and companies</p>
+                            <button class="btn btn--primary text-16 py-5">
+                                Register now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>your content</div>
+            <div>your content</div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+            });
+        });
+    </script>
 </body>
 
 </html>
+
+<style>
+    .your-class {
+        margin-top: -155px;
+        z-index: 1;
+    }
+
+    .your-class .slick-dots {
+        top: 50%;
+        right: 0;
+        transform: rotate(90deg);
+        z-index: 999;
+        width: 200px;
+        height: 33px;
+    }
+
+    .your-class .first-carousel {
+        background: url("./assets/images/slider1.png") top no-repeat;
+        height: calc(100vh + 40px);
+        background-size: cover;
+    }
+
+    .your-class .slick-dots li.slick-active button:before {
+        color: #072554;
+        opacity: 0.3;
+    }
+
+    .your-class .slick-dots li.slick-active button:before {
+        color: #072554;
+        opacity: 1;
+    }
+
+    .your-class .slick-dots li button:before {
+        font-size: 12px;
+    }
+
+    .your-class.slick-initialized.slick-slider.slick-dotted {
+        margin-bottom: 0 !important;
+    }
+</style>

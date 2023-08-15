@@ -33,7 +33,8 @@ $breakValue in $breakpoints {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-
+    position: relative;
+    z-index: 10;
 
     &__logo {
         max-width: 100px;

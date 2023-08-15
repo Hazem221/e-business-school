@@ -36,8 +36,3 @@ tags.forEach((tag) => {
 });
 
 /* companies page */
-
-$("#single").select2({
-  placeholder: "Select a programming language",
-  allowClear: true,
-});
