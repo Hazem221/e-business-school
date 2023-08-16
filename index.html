@@ -110,6 +110,104 @@
     <div class="wrapper">
 
         <div class="your-class">
+
+            <div class="instructors h-100">
+                <div class="container h-100">
+                    <div class="instructors__slider h-100">
+                        <div class="instructor">
+                            <div class="instructor__front p-5 d-flex justify-content-end align-items-start flex-direction-column gap-10"
+                                style="background-image: url(./assets/images/mentors/mentor1.jpg);">
+                                <h3 class="text-white text-18">Ahmed Hamdy</h3>
+                                <p class="text-white text-12">Regional manager, Panasonic</span>
+                            </div>
+                            <div class="instructor__back bg-wihte p-5">
+                                <h4 class="text-black text-18">Ahmed Hamdy</h4>
+                                <p class="text-gray-500 text-14">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quaerat non repellendus impedit? Dicta ea architecto quo perferendis vero
+                                    corrupti, nostrum, itaque rem dolores maxime explicabo perspiciatis ab nemo odio
+                                    adipisci.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="instructor">
+                            <div class="instructor__front p-5 d-flex justify-content-end align-items-start flex-direction-column gap-10"
+                                style="background-image: url(./assets/images/mentors/mentor2.jpg);">
+                                <h3 class="text-white text-18">Norman Fisher</h3>
+                                <p class="text-white text-12">Managing Director at INFRALAB</span>
+                            </div>
+                            <div class="instructor__back bg-wihte p-5">
+                                <h4 class="text-black text-18">Norman Fisher</h4>
+                                <p class="text-gray-500 text-14">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quaerat non repellendus impedit? Dicta ea architecto quo perferendis vero
+                                    corrupti, nostrum, itaque rem dolores maxime explicabo perspiciatis ab nemo odio
+                                    adipisci.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="instructor">
+                            <div class="instructor__front p-5 d-flex justify-content-end align-items-start flex-direction-column gap-10"
+                                style="background-image: url(./assets/images/mentors/mentor3.jpg);">
+                                <h3 class="text-white text-18">Emilie Bell</h3>
+                                <p class="text-white text-12">Managing Director at Pexadin</span>
+                            </div>
+                            <div class="instructor__back bg-wihte p-5">
+                                <h4 class="text-black text-18">Emilie Bell</h4>
+                                <p class="text-gray-500 text-14">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quaerat non repellendus impedit? Dicta ea architecto quo perferendis vero
+                                    corrupti, nostrum, itaque rem dolores maxime explicabo perspiciatis ab nemo odio
+                                    adipisci.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="instructor">
+                            <div class="instructor__front p-5 d-flex justify-content-end align-items-start flex-direction-column gap-10"
+                                style="background-image: url(./assets/images/mentors/mentor4.jpg);">
+                                <h3 class="text-white text-18">Angel Walker</h3>
+                                <p class="text-white text-12">General Partner at Norwest Venture </span>
+                            </div>
+                            <div class="instructor__back bg-wihte p-5">
+                                <h4 class="text-black text-18">Angel Walker</h4>
+                                <p class="text-gray-500 text-14">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quaerat non repellendus impedit? Dicta ea architecto quo perferendis vero
+                                    corrupti, nostrum, itaque rem dolores maxime explicabo perspiciatis ab nemo odio
+                                    adipisci.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="instructor">
+                            <div class="instructor__front p-5 d-flex justify-content-end align-items-start flex-direction-column gap-10"
+                                style="background-image: url(./assets/images/mentors/mentor5.jpg);">
+                                <h3 class="text-white text-18">Angel Walker</h3>
+                                <p class="text-white text-12">General Partner at Norwest Venture </span>
+                            </div>
+                            <div class="instructor__back bg-wihte p-5">
+                                <h4 class="text-black text-18">Angel Walker</h4>
+                                <p class="text-gray-500 text-14">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quaerat non repellendus impedit? Dicta ea architecto quo perferendis vero
+                                    corrupti, nostrum, itaque rem dolores maxime explicabo perspiciatis ab nemo odio
+                                    adipisci.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="instructor">
+                            <div class="instructor__front p-5 d-flex justify-content-end align-items-start flex-direction-column gap-10"
+                                style="background-image: url(./assets/images/mentors/mentor6.jpg);">
+                                <h3 class="text-white text-18">Angel Walker</h3>
+                                <p class="text-white text-12">General Partner at Norwest Venture </span>
+                            </div>
+                            <div class="instructor__back bg-wihte p-5">
+                                <h4 class="text-black text-18">Angel Walker</h4>
+                                <p class="text-gray-500 text-14">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quaerat non repellendus impedit? Dicta ea architecto quo perferendis vero
+                                    corrupti, nostrum, itaque rem dolores maxime explicabo perspiciatis ab nemo odio
+                                    adipisci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="first-carousel">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
@@ -129,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            <div>your content</div>
+
             <div>your content</div>
         </div>
     </div>
@@ -147,7 +245,27 @@
                 slidesToShow: 1,
             });
         });
+
+        $(document).ready(function () {
+            $('.instructors__slider').slick({
+                dots: false,
+                // infinite: false,
+                arrows: true,
+                slidesToShow: 4,
+                prevArrow: `<button class="instructors__next-button">
+  <img src="./assets/images/arrow-right-blue.svg" alt="">
+</button>`,
+                nextArrow: `<button class="instructors__prev-button">
+  <img src="./assets/images/arrow-right-blue.svg" alt="">
+</button>`,
+            });
+        });
     </script>
 </body>
 
 </html>
+
+<style>
+
+
+</style>
