@@ -1,7 +1,7 @@
 .your-class {
     .slick-dots {
         top: 50%;
-        right: 0;
+        right: -30px;
         transform: rotate(90deg);
         z-index: 999;
         width: 200px;
@@ -61,28 +61,39 @@
     background-size: cover;
     height: calc(100vh + 40px);
 
+    &__title {
+        margin-top: 11rem;
+        margin-bottom: 3rem;
+        font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+
+        @media (max-width : 576px) {
+            margin-bottom: 1rem;
+        }
+    }
+
     &__slider {
         display: flex;
         align-items: center;
     }
 
     .slick-slide {
-        margin: 0 20px;
+        margin: 0 8px;
     }
 
     .slick-list {
-        margin: 0 -20px;
+        margin: 0 -8px;
     }
 
     &__prev-button,
     &__next-button {
         bottom: 0;
         position: absolute;
-        bottom: 15%;
+        bottom: -25%;
         right: 45%;
         border: none;
         background-color: transparent;
         cursor: pointer;
+        z-index: 999;
     }
 
     &__prev-button {
@@ -94,8 +105,7 @@
 
     .instructor {
         perspective: 500px;
-        width: 300px;
-        height: 350px;
+        height: 290px;
         position: relative;
         transition: all 0.5s ease-in-out;
         transform-style: preserve-3d;
