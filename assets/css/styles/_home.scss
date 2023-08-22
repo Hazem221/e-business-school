@@ -225,3 +225,106 @@
         transform: rotate(180deg)
     }
 }
+
+
+
+.contact {
+    height: calc(100vh + 40px);
+
+    @media (max-width : 992px) {
+        height: 100%
+    }
+
+    &__title {
+        margin-bottom: 2.5rem;
+        font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+
+        @media (max-width : 992px) {
+            margin-top: 11rem;
+        }
+    }
+
+    &__data {
+        max-width: 400px;
+
+        &__address,
+        &__mail,
+        &__phone {
+            opacity: 0.5;
+        }
+
+        &__mail,
+        &__phone {
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__form {
+        margin-top: 6rem;
+
+        @media (max-width : 992px) {
+            margin-top: 3rem;
+        }
+
+        &__btn {
+            margin-top: 5rem;
+        }
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 90%;
+        height: calc(4rem + 2px);
+        margin: 0 0 2rem;
+        padding: 4px;
+        border: none;
+        border-bottom: 1px solid #00000060;
+        background: #fff;
+        resize: none;
+        outline: none;
+
+        &[required]:focus {
+            border-color: #979797;
+        }
+
+        &[required]:focus+label[placeholder]:before {
+            color: #030303;
+            color: #69CBE1;
+        }
+
+        &[required]:focus+label[placeholder]:before,
+        &[required]:valid+label[placeholder]:before {
+            transition-duration: 0.2s;
+            transform: translate(0, -1.5em) scale(0.9, 0.9);
+        }
+
+        &[required]:invalid+label[placeholder][alt]:before {
+            content: attr(alt);
+        }
+
+        &[required]+label[placeholder] {
+            display: block;
+            pointer-events: none;
+            line-height: 0;
+            margin-top: calc(-4em - 2px);
+            margin-bottom: calc(3em + 2px);
+        }
+
+        &[required]+label[placeholder]:before {
+            content: attr(placeholder);
+            display: inline-block;
+            // margin: 0 calc(1em + 2px);
+            padding: 0 2px;
+            color: #000;
+            white-space: nowrap;
+            transition: 0.3s ease-in-out;
+            background-image: linear-gradient(to bottom, #fff, #fff);
+            background-size: 100% 5px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
