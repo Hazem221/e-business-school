@@ -111,6 +111,51 @@
 
         <div class="your-class">
 
+            <div class="testimonials h-100">
+                <h3 class="testimonials__title text-center font-weight-500">Our Students</h3>
+                <p class="testimonials__content text-center font-weight-300">What our students have to say</p>
+                <div class="container h-100">
+                    <div class="testimonials__slider">
+                        <div class="testimonial radius-12">
+                            <!-- <img class="testimonial__image" src="./assets/images/mentors/mentor1.jpg" alt=""> -->
+                            <blockquote class="italic-font text-14 mb-3">
+                                The courses are fantastic and the instructors are so fun and knowledgeable.
+                            </blockquote>
+                            <h4 class="text-gray-800 text-12 font-weight-500">Mai Ahmed</h4>
+                            <p class="text-gray-700 text-12 ">United Kingdom</p>
+                        </div>
+                        <div class="testimonial radius-12">
+                            <blockquote class="italic-font text-14 mb-3">
+                                The courses are fantastic and the instructors are so fun and knowledgeable.
+                            </blockquote>
+                            <h4 class="text-gray-800 text-12 font-weight-500">Mai Ahmed</h4>
+                            <p class="text-gray-700 text-12 ">United Kingdom</p>
+                        </div>
+                        <div class="testimonial radius-12">
+                            <blockquote class="italic-font text-14 mb-3">
+                                The courses are fantastic and the instructors are so fun and knowledgeable.
+                            </blockquote>
+                            <h4 class="text-gray-800 text-12 font-weight-500">Mai Ahmed</h4>
+                            <p class="text-gray-700 text-12 ">United Kingdom</p>
+                        </div>
+                        <div class="testimonial radius-12">
+                            <blockquote class="italic-font text-14 mb-3">
+                                The courses are fantastic and the instructors are so fun and knowledgeable.
+                            </blockquote>
+                            <h4 class="text-gray-800 text-12 font-weight-500">Mai Ahmed</h4>
+                            <p class="text-gray-700 text-12 ">United Kingdom</p>
+                        </div>
+                        <div class="testimonial radius-12">
+                            <blockquote class="italic-font text-14 mb-3">
+                                The courses are fantastic and the instructors are so fun and knowledgeable.
+                            </blockquote>
+                            <h4 class="text-gray-800 text-12 font-weight-500">Mai Ahmed</h4>
+                            <p class="text-gray-700 text-12 ">United Kingdom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="instructors h-100">
                 <div class="container h-100">
                     <h2 class="instructors__title font-weight-500">Our Instructors</h2>
@@ -257,6 +302,22 @@
   <img src="./assets/images/arrow-right-blue.svg" alt="">
 </button>`,
                 nextArrow: `<button class="instructors__prev-button">
+  <img src="./assets/images/arrow-right-blue.svg" alt="">
+</button>`,
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('.testimonials__slider').slick({
+                dots: false,
+                // infinite: false,
+                arrows: true,
+                slidesToShow: 3,
+                prevArrow: `<button class="testimonials__next-button">
+  <img src="./assets/images/arrow-right-blue.svg" alt="">
+</button>`,
+                nextArrow: `<button class="testimonials__prev-button">
   <img src="./assets/images/arrow-right-blue.svg" alt="">
 </button>`,
             });

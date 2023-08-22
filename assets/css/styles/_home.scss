@@ -143,3 +143,85 @@
         }
     }
 }
+
+
+.testimonials {
+    height: calc(100vh + 40px);
+
+    &__title {
+        margin-top: 11rem;
+        margin-bottom: 0.5rem;
+        font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+    }
+
+    &__content {
+        opacity: 0.7;
+        font-size: clamp(0.75rem, 0.3750rem + 1.6667vw, 1.25rem);
+        margin-bottom: 6rem;
+
+        @media (max-width : 576px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+    }
+
+    .testimonial {
+        position: relative;
+        background-color: #EFEFEF;
+        padding: 38px 30px 30px 38px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -22px;
+            left: 40px;
+            width: 60px;
+            height: 60px;
+            background: url("../../../assets/images/quote.svg") center no-repeat;
+
+        }
+
+        // &__image {
+        //     width: 90px;
+        //     height: 100px;
+        //     position: absolute;
+        //     top: -55px;
+        //     left: -60px;
+        //     border-radius: 10px;
+        // }
+
+        .italic-font {
+            font-style: italic;
+        }
+    }
+
+    .slick-slide {
+        margin: 0 25px;
+    }
+
+    .slick-list {
+        margin: 0 -25px;
+    }
+
+    &__prev-button,
+    &__next-button {
+        bottom: 0;
+        position: absolute;
+        bottom: -40%;
+        right: 45%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    &__prev-button {
+        right: auto;
+        left: 45%;
+        transform: rotate(180deg)
+    }
+}

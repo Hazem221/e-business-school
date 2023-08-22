@@ -2490,6 +2490,30 @@ body {
   fill: #373535;
 }
 
+.text-gray-800 {
+  color: #373742;
+}
+
+.bg-gray-800 {
+  background-color: #373742;
+}
+
+.fill-gray-800 {
+  fill: #373742;
+}
+
+.text-gray-700 {
+  color: #7B7B88;
+}
+
+.bg-gray-700 {
+  background-color: #7B7B88;
+}
+
+.fill-gray-700 {
+  fill: #7B7B88;
+}
+
 .text-gray-500 {
   color: #9EA0A5;
 }
@@ -7151,4 +7175,65 @@ body {
 }
 .instructors .instructor:hover {
   transform: rotateY(180deg);
+}
+
+.testimonials {
+  height: calc(100vh + 40px);
+}
+.testimonials__title {
+  margin-top: 11rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+}
+.testimonials__content {
+  opacity: 0.7;
+  font-size: clamp(0.75rem, 0.375rem + 1.6667vw, 1.25rem);
+  margin-bottom: 6rem;
+}
+@media (max-width: 576px) {
+  .testimonials__content {
+    margin-bottom: 1rem;
+  }
+}
+.testimonials__slider {
+  display: flex;
+  align-items: center;
+}
+.testimonials .testimonial {
+  position: relative;
+  background-color: #EFEFEF;
+  padding: 38px 30px 30px 38px;
+}
+.testimonials .testimonial::before {
+  position: absolute;
+  content: "";
+  top: -22px;
+  left: 40px;
+  width: 60px;
+  height: 60px;
+  background: url("../../../assets/images/quote.svg") center no-repeat;
+}
+.testimonials .testimonial .italic-font {
+  font-style: italic;
+}
+.testimonials .slick-slide {
+  margin: 0 25px;
+}
+.testimonials .slick-list {
+  margin: 0 -25px;
+}
+.testimonials__prev-button, .testimonials__next-button {
+  bottom: 0;
+  position: absolute;
+  bottom: -40%;
+  right: 45%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+.testimonials__prev-button {
+  right: auto;
+  left: 45%;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
