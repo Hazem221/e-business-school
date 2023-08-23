@@ -7339,7 +7339,6 @@ body {
 
 .categories {
   min-height: calc(100vh + 40px);
-  margin-bottom: 7rem;
 }
 @media (max-width: 992px) {
   .categories {
@@ -7348,7 +7347,7 @@ body {
 }
 .categories__title {
   margin-top: 11rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
 }
 @media (max-width: 992px) {
@@ -7357,28 +7356,36 @@ body {
   }
 }
 .categories__tabs {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 .categories__tabs ul {
   gap: 50px;
 }
-.categories .card {
+.categories__tabs ul li {
+  cursor: pointer;
+  font-size: 18px;
+}
+.categories__tabs ul li.active {
+  font-weight: bold;
+  color: #072554;
+}
+.categories .course-card {
   position: relative;
   overflow: hidden;
   box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.09);
   margin: 4px;
 }
-.categories .card__image {
+.categories .course-card__image {
   max-height: 180px;
   overflow: hidden;
 }
-.categories .card__content {
+.categories .course-card__content {
   padding: 16px 25px 20px 18px;
 }
-.categories .card__author {
+.categories .course-card__author {
   color: #6A9BDE;
 }
-.categories .card__price__before {
+.categories .course-card__price__before {
   opacity: 0.5;
   text-decoration: line-through;
 }
