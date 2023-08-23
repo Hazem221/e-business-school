@@ -7075,11 +7075,11 @@ body {
   }
 }
 
-.your-class {
+.home-class {
   margin-top: -155px;
   z-index: 1;
 }
-.your-class .slick-dots {
+.home-class .slick-dots {
   top: 50%;
   right: -30px;
   transform: rotate(90deg);
@@ -7087,33 +7087,33 @@ body {
   width: 200px;
   height: 33px;
 }
-.your-class .slick-dots li button:before {
+.home-class .slick-dots li button:before {
   font-size: 12px;
 }
-.your-class .slick-dots li.slick-active button:before {
+.home-class .slick-dots li.slick-active button:before {
   color: #072554;
   opacity: 0.3;
 }
-.your-class .slick-dots li.slick-active button:before {
+.home-class .slick-dots li.slick-active button:before {
   color: #072554;
   opacity: 1;
 }
-.your-class.slick-initialized.slick-slider.slick-dotted {
+.home-class.slick-initialized.slick-slider.slick-dotted {
   margin-bottom: 0 !important;
 }
-.your-class .first-carousel {
+.home-class .first-carousel {
   background: url("../../../assets/images/slider1.png") top no-repeat;
   background-size: cover;
   height: calc(100vh + 40px);
 }
-.your-class .first-carousel__slogan {
+.home-class .first-carousel__slogan {
   margin-top: 6rem;
   font-size: clamp(0.75rem, -0.1875rem + 4.1667vw, 2rem);
 }
-.your-class .first-carousel__title {
+.home-class .first-carousel__title {
   font-size: clamp(1.438rem, 0.313rem + 5vw, 2.938rem);
 }
-.your-class .first-carousel__content {
+.home-class .first-carousel__content {
   font-size: clamp(0.75rem, 0.5625rem + 0.8333vw, 1rem);
 }
 
@@ -7178,9 +7178,9 @@ body {
 .instructors .instructor__front {
   z-index: 999;
   backface-visibility: hidden;
-  background-size: cover;
+  background-size: cover !important;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
 }
 .instructors .instructor__back {
   z-index: 888;
