@@ -667,6 +667,10 @@ body {
   color: #002457;
 }
 
+.list-style-none {
+  list-style: none;
+}
+
 .container,
 .container-fluid,
 .container-sm,
@@ -2512,6 +2516,18 @@ body {
 
 .fill-gray-700 {
   fill: #7B7B88;
+}
+
+.text-gray-600 {
+  color: #B2B2B2;
+}
+
+.bg-gray-600 {
+  background-color: #B2B2B2;
+}
+
+.fill-gray-600 {
+  fill: #B2B2B2;
 }
 
 .text-gray-500 {
@@ -7319,4 +7335,73 @@ body {
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.categories {
+  min-height: calc(100vh + 40px);
+  margin-bottom: 7rem;
+}
+@media (max-width: 992px) {
+  .categories {
+    height: 100%;
+  }
+}
+.categories__title {
+  margin-top: 11rem;
+  margin-bottom: 2.5rem;
+  font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
+}
+@media (max-width: 992px) {
+  .categories__title {
+    margin-top: 11rem;
+  }
+}
+.categories__tabs {
+  margin-bottom: 3rem;
+}
+.categories__tabs ul {
+  gap: 50px;
+}
+.categories .card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.09);
+  margin: 4px;
+}
+.categories .card__image {
+  max-height: 180px;
+  overflow: hidden;
+}
+.categories .card__content {
+  padding: 16px 25px 20px 18px;
+}
+.categories .card__author {
+  color: #6A9BDE;
+}
+.categories .card__price__before {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.categories .slick-slide {
+  margin: 0 5px;
+}
+.categories .slick-list {
+  margin: 0 -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.categories__prev-button, .categories__next-button {
+  bottom: 0;
+  position: absolute;
+  bottom: -15%;
+  right: 45%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+.categories__prev-button {
+  right: auto;
+  left: 45%;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
