@@ -164,6 +164,7 @@
         function closeVideoPopup(e) {
             const videoPopups = document.getElementsByClassName('video-popup');
             for (let i = 0; i < videoPopups.length; i++) {
+                location.reload();
                 videoPopups[i].style.display = 'none';
             }
         }
