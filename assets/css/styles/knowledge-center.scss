@@ -64,4 +64,78 @@
             }
         }
     }
+
+    .pagination {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;
+
+        a {
+
+            color: black;
+            float: left;
+            text-decoration: none;
+            margin-inline-end: 12px;
+            border: 1px solid #EBEBEB;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+
+            &.active {
+                background-color: transparent;
+                border: 1px solid #002457;
+                border-radius: 50%;
+                color: #002457;
+            }
+
+            &.prev-btn,
+            &.next-btn {
+                background: #E4E7EE;
+                color: #5F259F;
+            }
+
+            &:hover:not(.active) {
+                border: 1px solid #002457;
+                border-radius: 50%;
+                color: #002457;
+            }
+        }
+    }
+
+    .request-mentorship {
+        background: #00215E;
+
+        .cover-image {
+            width: 50%;
+            max-height: 240px;
+            clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+
+
+            @media (max-width : 992px) {
+                width: 100%;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .content {
+            width: 50%;
+
+            @media (max-width : 992px) {
+                text-align: center;
+                width: 100%;
+                padding: 2rem;
+            }
+        }
+    }
+
 }
