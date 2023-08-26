@@ -5,15 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge center</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
+    <div class="container">
+        <nav class="nav">
+            <a href="/" class="nav__logo">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <div class="d-flex align-items-center gap-30">
+                <!-- <div class=" nav__search-icon"> -->
+                <img class="d-none d-lg-block nav__search-icon" src="./assets/images/search-icon.svg" alt="">
+                <!-- </div> -->
+                <ul class="d-none d-lg-flex nav__nav-list">
+                    <li class="nav__nav-list__list-item"><a href="">Our Blog</a></li>
+                    <li class="nav__nav-list__list-item"><a href="/about-us.html">About us</a></li>
+                    <li class="nav__nav-list__list-item"><a href="/free-talks.html">Free Talks</a></li>
+                    <li class="nav__nav-list__list-item"><a href="/companies.html">Companies</a></li>
+                    <li class="nav__nav-list__list-item"><a href="/knowledge-center.html">Knowledge center</a></li>
+                    <li class="nav__nav-list__list-item"><a href="/monitoring.html">Monitoring</a></li>
+                    <li class="nav__nav-list__list-item"><a href="/login.html">Login</a></li>
+                </ul>
+
+                <div class="nav__burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="side-menu">
+                <div class="side-menu__close">
+                    <img class="cursor-pointer" src="./assets/images/close-icon.svg" alt="">
+                </div>
+                <p class="side-menu__categories text-36 text-black font-weight-500">Categories</p>
+                <ul class="side-menu__list">
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Digital business
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    E-commerece for startups
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Masktering facebook advertising
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Growth hacking masterclass
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Digital marketing management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Digital marketing
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    E-commerece for startups
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Masktering facebook advertising
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Growth hacking masterclass
+                                </a>
+                            </li>
+                            <li class="sub-menu__item text-16 font-weight-400">
+                                <a href="">
+                                    Digital marketing management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">SEO</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Art & Design</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Photography</li>
+                    <li class="side-menu__list__item text-primary text-18 font-weight-500">Software development</li>
+                </ul>
+
+            </div>
+            <div id="overlay" class="d-none"></div>
+        </nav>
+    </div>
+
+
     <section class="knowledge-center">
         <div class="cover d-flex justify-content-center align-items-center flex-direction-column">
             <h1 class="cover__title text-center font-weight-500 text-white mb-3">Small Business Knowledge Centre</h1>
             <p class="text-white text-20 text-center mb-6">Packed with insight and support for small businesses</p>
-            <a href="/book-now.html" class="btn btn--white text-16">Take a tour</a>
+            <a href="/booking.html" class="btn btn--white text-16">Take a tour</a>
         </div>
 
         <div class="container">
@@ -217,12 +315,14 @@
                 <p class="text-white text-14 mb-4">Ask your potential mentor if he or she can make time for an hour
                     meeting
                     with you.</p>
-                <a href="/book-now.html" class="btn btn--white text-16">Book Now</a>
+                <a href="/booking.html" class="btn btn--white text-16">Book Now</a>
 
             </div>
         </div>
 
     </section>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
