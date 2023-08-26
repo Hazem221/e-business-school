@@ -25,3 +25,20 @@ body {
     font-family: "Poppins", "sans-serif", "arial";
     overflow-x: hidden;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #B2B2B2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7B7B88;
+    border-radius: 8px;
+}
