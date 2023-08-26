@@ -6763,6 +6763,9 @@ body {
 .knowledge-center .master-article__content {
   line-height: 30px;
 }
+.knowledge-center .master-article a:hover {
+  color: #00215E !important;
+}
 .knowledge-center .articles {
   margin-top: 25px;
   margin-bottom: 60px;
@@ -6779,6 +6782,9 @@ body {
   border-radius: 4px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.knowledge-center .articles .article a:hover {
+  color: #00215E !important;
 }
 .knowledge-center .pagination {
   margin-top: 3rem;

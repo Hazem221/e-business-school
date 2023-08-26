@@ -41,6 +41,12 @@
         &__content {
             line-height: 30px;
         }
+
+        a {
+            &:hover {
+                color: #00215E !important
+            }
+        }
     }
 
 
@@ -60,6 +66,12 @@
                     height: 290px;
                     border-radius: 4px;
                     object-fit: cover;
+                }
+            }
+
+            a {
+                &:hover {
+                    color: #00215E !important
                 }
             }
         }
