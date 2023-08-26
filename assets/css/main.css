@@ -637,6 +637,19 @@ body {
   width: 20px;
 }
 
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer .social-icons img {
+  max-width: 20px;
+}
+footer .contact-us {
+  background-color: #69CBE1;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .w-100 {
   width: 100%;
   max-width: 100%;

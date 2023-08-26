@@ -227,3 +227,21 @@ $breakValue in $breakpoints {
 
     }
 }
+
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .social-icons {
+        img {
+            max-width: 20px;
+        }
+    }
+
+    .contact-us {
+        background-color: #69CBE1;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
