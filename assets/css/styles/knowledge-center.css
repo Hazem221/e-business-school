@@ -121,4 +121,15 @@
     width: 100%;
     padding: 2rem;
   }
+}
+
+.single-article__title {
+  font-size: clamp(1rem, 0.25rem + 3.3333vw, 2rem);
+}
+.single-article__main-image {
+  overflow: hidden;
+}
+.single-article .next-prev .next,
+.single-article .next-prev .prev {
+  max-width: 200px;
 }/*# sourceMappingURL=knowledge-center.css.map */

@@ -6850,6 +6850,17 @@ body {
   }
 }
 
+.single-article__title {
+  font-size: clamp(1rem, 0.25rem + 3.3333vw, 2rem);
+}
+.single-article__main-image {
+  overflow: hidden;
+}
+.single-article .next-prev .next,
+.single-article .next-prev .prev {
+  max-width: 200px;
+}
+
 .companies__title {
   font-size: clamp(1.625rem, 0.6875rem + 4.1667vw, 2.875rem);
 }

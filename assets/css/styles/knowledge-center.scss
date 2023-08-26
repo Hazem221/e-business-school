@@ -151,3 +151,24 @@
     }
 
 }
+
+
+
+.single-article {
+    &__title {
+        font-size: clamp(1rem, 0.2500rem + 3.3333vw, 2rem);
+    }
+
+    &__main-image {
+        overflow: hidden;
+    }
+
+
+    .next-prev {
+
+        .next,
+        .prev {
+            max-width: 200px;
+        }
+    }
+}
